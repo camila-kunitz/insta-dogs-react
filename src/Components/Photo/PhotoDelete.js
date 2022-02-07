@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './PhotoDelete.module.css';
 import useFetch from '../../Hooks/useFetch';
 import { PHOTO_DELETE } from '../../Api';
+import styles from './PhotoDelete.module.css';
 
 export const PhotoDelete = ({ id }) => {
   const { loading, request } = useFetch();
