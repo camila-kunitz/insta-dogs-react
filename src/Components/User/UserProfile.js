@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import Feed from '../Feed/Feed';
 import Head from '../Helper/Head';
 
-export const UserProfile = () => {
+const UserProfile = () => {
   const { user } = useParams();
 
   return (
@@ -14,3 +14,5 @@ export const UserProfile = () => {
     </section>
   );
 };
+
+export default UserProfile;

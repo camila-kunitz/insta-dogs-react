@@ -28,13 +28,13 @@
   outline: none;
 }
 
-.nav a:global(.active) {
+.nav :global(a.active) {
   background: white;
   box-shadow: 0 0 0 3px #fea;
   border-color: #fb1;
 }
 
-.nav a:global(.active) svg > * {
+.nav :global(a.active) svg > * {
   fill: #fb1;
 }
 
@@ -65,7 +65,7 @@
 
 .mobileButton:focus,
 .mobileButton:hover,
-mobileButtonActive {
+.mobileButtonActive {
   outline: none;
   background: white;
   box-shadow: 0 0 0 3px #fea;

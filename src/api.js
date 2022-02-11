@@ -115,7 +115,7 @@ export function PASSWORD_LOST(body) {
     options: {
       method: 'POST',
       headers: {
-        'Content-type': 'application/json',
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify(body),
     },
@@ -128,7 +128,7 @@ export function PASSWORD_RESET(body) {
     options: {
       method: 'POST',
       headers: {
-        'Content-type': 'application/json',
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify(body),
     },

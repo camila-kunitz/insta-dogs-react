@@ -15,7 +15,6 @@ const Feed = ({ user }) => {
         const scroll = window.scrollY;
         const height = document.body.offsetHeight - window.innerHeight;
         if (scroll > height * 0.75 && !wait) {
-          console.log(true);
           setPages((pages) => [...pages, pages.length + 1]);
           wait = true;
           setTimeout(() => {
@@ -47,6 +46,17 @@ const Feed = ({ user }) => {
           setInfinite={setInfinite}
         />
       ))}
+      {!infinite && !user && (
+        <p
+          style={{
+            textAlign: 'center',
+            padding: '2rem 0 4rem 0',
+            color: '#888',
+          }}
+        >
+          Não existem mais postagens.
+        </p>
+      )}
     </div>
   );
 };
@@ -55,7 +65,7 @@ Feed.defaultProps = {
   user: 0,
 };
 
-Feed.prototype = {
+Feed.propTypes = {
   user: PropTypes.oneOfType([
     PropTypes.string.isRequired,
     PropTypes.number.isRequired,

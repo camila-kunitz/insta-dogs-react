@@ -3,7 +3,7 @@ import useFetch from '../../Hooks/useFetch';
 import { PHOTO_DELETE } from '../../Api';
 import styles from './PhotoDelete.module.css';
 
-export const PhotoDelete = ({ id }) => {
+const PhotoDelete = ({ id }) => {
   const { loading, request } = useFetch();
 
   async function handleClick() {
@@ -29,3 +29,5 @@ export const PhotoDelete = ({ id }) => {
     </>
   );
 };
+
+export default PhotoDelete;

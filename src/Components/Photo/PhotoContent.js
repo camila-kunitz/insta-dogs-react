@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { UserContext } from '../../UserContext';
 import PhotoComments from './PhotoComments';
 import styles from './PhotoContent.module.css';
-import { PhotoDelete } from './PhotoDelete';
+import PhotoDelete from './PhotoDelete';
 import Image from '../Helper/Image';
 
 const PhotoContent = ({ data, single }) => {
@@ -34,7 +34,7 @@ const PhotoContent = ({ data, single }) => {
           </ul>
         </div>
       </div>
-      <PhotoComments single={{ single }} id={photo.id} comments={comments} />
+      <PhotoComments single={single} id={photo.id} comments={comments} />
     </div>
   );
 };

@@ -16,7 +16,7 @@ const LoginPasswordLost = () => {
     if (login.validate()) {
       const { url, options } = PASSWORD_LOST({
         login: login.value,
-        url: 'http://localhost:3000/login/perdeu',
+        url: window.location.href.replace('perdeu', 'resetar'),
       });
       const { json } = await request(url, options);
       console.log(json);
