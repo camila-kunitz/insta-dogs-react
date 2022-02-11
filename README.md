@@ -43,3 +43,7 @@ Formulário para postagem de fotos.
 Página com gráficos de acessos utilizando a biblioteca [Victory](https://www.npmjs.com/package/victory).
 
 ![Modal de detalhes e comentários](/documentacao/estatisticas.gif)
+
+## CERTIFICADO
+
+![Certificado](/documentacao/certificado.png)
