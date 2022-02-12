@@ -12,6 +12,8 @@ Projeto final do curso de React Completo da plataforma Origamid.
 - Em seguida, rode o comando `npm start` para iniciar o projeto React;
 - O projeto então pode ser acessado no endereço http://localhost:3000/.
 
+Ou você pode acessar o projeto hospedado no _Netlify_: [camila-instadogs](https://camila-instadogs.netlify.app/).
+
 ## Funcionalidades da aplicação
 
 ### Página inicial de login
